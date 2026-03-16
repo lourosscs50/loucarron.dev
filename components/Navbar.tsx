@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0B0B0F]/85 backdrop-blur">
@@ -7,21 +9,34 @@ export default function Navbar() {
           <p className="text-xs text-white/60">Software Developer</p>
         </div>
 
-        <nav className="hidden gap-8 text-sm text-white/75 md:flex">
+        <nav className="hidden items-center gap-8 text-sm text-white/75 md:flex">
           <a href="#systems" className="transition hover:text-white">
             Systems
           </a>
+
           <a href="#projects" className="transition hover:text-white">
             Projects
           </a>
+
           <a href="#principles" className="transition hover:text-white">
             Principles
           </a>
+
           <a href="#stack" className="transition hover:text-white">
             Stack
           </a>
+
           <a href="#contact" className="transition hover:text-white">
             Contact
+          </a>
+
+          <a
+            href="https://github.com/lourosscs50"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 hover:text-white transition"
+          >
+            <Github size={20} />
           </a>
         </nav>
       </div>

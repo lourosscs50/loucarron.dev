@@ -74,19 +74,25 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         <section className="mb-16">
-          <h2 className="mb-6 text-2xl font-semibold text-zinc-100">
-            System Flow
-          </h2>
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold text-zinc-100">
+              System Flow
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-zinc-400">
+              High-level flow of how the system is structured from entry point
+              to core processing and persistence.
+            </p>
+          </div>
 
-          <div className="max-w-3xl space-y-3">
+          <div className="mx-auto max-w-2xl">
             {project.diagram.map((step, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 px-5 py-4 text-center text-zinc-200 shadow-sm">
+              <div key={step} className="flex flex-col items-center">
+                <div className="w-full rounded-2xl border border-zinc-800 bg-zinc-950/80 px-6 py-4 text-center text-sm font-medium text-zinc-200 shadow-sm">
                   {step}
                 </div>
 
                 {index < project.diagram.length - 1 && (
-                  <div className="py-2 text-xl text-zinc-500">↓</div>
+                  <div className="py-3 text-lg text-zinc-500">↓</div>
                 )}
               </div>
             ))}
@@ -94,15 +100,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-6 text-2xl font-semibold text-zinc-100">
-            Architecture
-          </h2>
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold text-zinc-100">
+              Architecture
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-zinc-400">
+              Key architectural decisions and boundaries that shape how the
+              system is organized.
+            </p>
+          </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            {project.architecture.map((item, index) => (
+          <div className="grid gap-4 sm:grid-cols-2">
+            {project.architecture.map((item) => (
               <div
-                key={index}
-                className="rounded-xl border border-zinc-700 bg-zinc-950 p-4 text-zinc-300"
+                key={item}
+                className="rounded-2xl border border-zinc-800 bg-zinc-950/80 p-4 text-sm leading-7 text-zinc-300"
               >
                 {item}
               </div>
@@ -116,9 +128,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </h2>
 
           <div className="flex flex-wrap gap-3">
-            {project.stack.map((tech, index) => (
+            {project.stack.map((tech) => (
               <span
-                key={index}
+                key={tech}
                 className="rounded-full border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm font-medium text-zinc-200"
               >
                 {tech}

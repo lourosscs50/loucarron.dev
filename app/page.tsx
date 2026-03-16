@@ -7,6 +7,7 @@ import StackSection from "../components/StackSection";
 import AboutPreview from "../components/AboutPreview";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import SystemDesignPrinciples from "../components/SystemDesignPrinciples";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <Hero />
     <SystemsSection />
     <ProjectsSection />
+    <SystemDesignPrinciples />
     <PrinciplesSection />
     <StackSection />
     <AboutPreview />

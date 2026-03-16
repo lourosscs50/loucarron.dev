@@ -122,7 +122,8 @@ export const projects: Project[] = [
       "PostgreSQL"
     ],
     stack: ["C#", ".NET", "PostgreSQL", "JWT", "Multi-Tenant SaaS"],
-    status: "In Progress"
+    status: "Completed",
+    github: "https://github.com/lourosscs50/ClientForge"
   }
 ]
 
