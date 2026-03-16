@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# loucarron.dev
 
-## Getting Started
+Personal developer portfolio showcasing backend architecture and system design projects.
 
-First, run the development server:
+This site highlights several systems focused on event processing, workflow orchestration, and scalable backend platform design.
+
+🌐 Live site: https://loucarron.dev
+
+---
+
+## Featured Systems
+
+### BeaconFlow
+Event ingestion infrastructure designed to accept, validate, and persist incoming events for downstream processing.
+
+Core ideas:
+- Reliable event intake pipeline
+- Clean architecture layering
+- REST API ingestion endpoints
+- Test-backed implementation
+
+Tech stack:
+- C#
+- .NET
+- REST API
+- xUnit
+- Clean Architecture
+
+
+### ChronoFlow
+Event-driven workflow orchestration platform designed to coordinate actions around event streams without letting domain logic leak into the core.
+
+Core ideas:
+- Modular monolith architecture
+- Deterministic workflow coordination
+- Event stream orchestration
+- Strict internal system boundaries
+
+Tech stack:
+- C#
+- .NET
+- PostgreSQL
+- JWT Authentication
+
+
+### SignalForge
+Signal detection engine built to analyze event streams and identify meaningful patterns and actionable signals.
+
+Core ideas:
+- Event pattern detection
+- Signal generation
+- Separation between detection and orchestration logic
+- Extensible rule evaluation
+
+Tech stack:
+- C#
+- .NET
+- Event processing
+
+
+### ClientForge
+Multi-tenant backend platform foundation designed for SaaS systems that require tenant-aware authentication and modular services.
+
+Core ideas:
+- Tenant-aware architecture
+- Authentication and identity management
+- Modular service boundaries
+- SaaS platform foundation
+
+Tech stack:
+- C#
+- .NET
+- PostgreSQL
+- JWT Authentication
+
+---
+
+## Architecture Approach
+
+This portfolio emphasizes **system design and architectural clarity**, focusing on:
+
+- Event-driven systems
+- Modular monolith architecture
+- Clean separation of concerns
+- Backend platform foundations
+- Scalable SaaS system design
+
+Each project is presented as a **case study** covering:
+
+- Problem
+- Solution
+- Architecture
+- System flow
+- Technology stack
+
+---
+
+## Tech Stack
+
+The portfolio site itself is built using:
+
+- Next.js
+- TypeScript
+- React
+- TailwindCSS
+- Vercel deployment
+
+---
+
+## Local Development
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/lourosscs50/loucarron.dev.git
