@@ -113,3 +113,15 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/lourosscs50/loucarron.dev.git
+Install dependencies:
+npm install
+Run the development server:
+npm run dev
+Open in browser:
+http://localhost:3000
+Deployment
+The site is deployed on Vercel and automatically updates when new commits are pushed to the main branch.
+Author
+Lou Carron
+Software Developer
+Portfolio: https://loucarron.dev
