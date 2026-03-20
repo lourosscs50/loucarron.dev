@@ -1,36 +1,43 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://loucarron.dev"),
   title: "Lou Carron | Software Developer",
   description:
-    "Software developer building clean, scalable systems across platform engineering, AI infrastructure, and full-stack applications.",
+    "Portfolio of Lou Carron — software developer building platform-focused systems and products.",
   openGraph: {
     title: "Lou Carron | Software Developer",
     description:
-      "Explore Lou Carron's portfolio: platform systems, AI infrastructure, and production-minded software engineering.",
+      "Portfolio of Lou Carron — software developer building platform-focused systems and products.",
     url: "https://loucarron.dev",
     siteName: "Lou Carron",
     images: [
       {
-        url: "/opengraph-image.jpg",
+        url: "https://loucarron.dev/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Lou Carron portfolio preview",
+        alt: "Lou Carron Portfolio",
       },
     ],
-    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Lou Carron | Software Developer",
     description:
-      "Platform systems, AI infrastructure, and full-stack software engineering.",
-    images: ["/opengraph-image.jpg"],
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+      "Portfolio of Lou Carron — software developer building platform-focused systems and products.",
+    images: ["https://loucarron.dev/og-image.png"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
