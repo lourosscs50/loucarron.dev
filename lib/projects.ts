@@ -94,8 +94,8 @@ export const projects: Project[] = [
       "Signal Output"
     ],
     stack: ["C#", ".NET", "Event Processing", "Detection Engine"],
-    status: "In Progress"
-
+    status: "Completed",
+    github: "https://github.com/lourosscs50/SignalForge"
   },
   {
     slug: "clientforge",

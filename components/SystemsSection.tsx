@@ -23,12 +23,6 @@ const systems = [
     description: "Multi-tenant foundation for building secure, scalable client-facing business systems.",
     tags: ["Multi-Tenant", "Identity", "PostgreSQL"],
   },
-  {
-    title: "SignalForge",
-    category: "Signal Detection",
-    description: "Pattern and signal detection engine designed for modular system analysis.",
-    tags: ["Detection", "Analytics", "Architecture"],
-  }
 ];
 
 export default function SystemsSection() {
