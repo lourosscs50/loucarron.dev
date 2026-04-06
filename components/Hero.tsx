@@ -5,27 +5,27 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-32">
         <div className="relative z-10">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#8ea8ff]">
-            Portfolio
+            Layered Platform Architecture
           </p>
           <h1 className="max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            I build modular backend systems, platform foundations, and full-stack applications.
+            Building modular systems where truth, intelligence, and observability are separated by design.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-            My work focuses on clean architecture, scalable design, and systems that are built to evolve without losing their core direction.
+            I design and build production-minded software platforms spanning event infrastructure, signal detection, workflow orchestration, governed AI integration, and operator visibility.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#projects"
+              href="#systems"
               className="rounded-2xl bg-[#4F7CFF] px-5 py-3 text-sm font-medium text-white shadow-lg shadow-[#4F7CFF]/20 transition hover:-translate-y-0.5"
             >
-              View Projects
+              View Platform Systems
             </a>
             <a
-              href="#contact"
+              href="#projects"
               className="rounded-2xl border border-white/15 px-5 py-3 text-sm font-medium text-white/85 transition hover:border-white/30 hover:bg-white/5"
             >
-              Contact Me
+              Explore Projects
             </a>
           </div>
         </div>
