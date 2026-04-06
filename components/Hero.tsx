@@ -39,22 +39,33 @@ export default function Hero() {
           </div>
 
           <div className="space-y-4">
-            {["ClientForge", "ChronoFlow", "SignalForge", "BeaconFlow"].map((name, index) => (
-              <div
-                key={name}
-                className="rounded-2xl border border-white/10 bg-black/20 p-4"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="font-medium">{name}</p>
-                  <span className="text-xs text-white/45">Layer {4 - index}</span>
-                </div>
-              </div>
-            ))}
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+              <p className="font-semibold text-white">Core Systems</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/60">
+                BeaconFlow • SignalForge • ChronoFlow
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+              <p className="font-semibold text-red-400">A.I.L.</p>
+              <p className="mt-2 text-sm text-red-300/80">AI Intelligence Layer</p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+              <p className="font-semibold text-blue-400">ControlPlane</p>
+              <p className="mt-2 text-sm text-blue-300/80">
+                Operator & Observability Layer
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+              <p className="font-semibold text-white">ClientForge</p>
+              <p className="mt-2 text-sm text-white/60">Application Platform</p>
+            </div>
           </div>
 
           <p className="mt-6 text-sm leading-6 text-white/60">
-            A portfolio centered on systems design: event ingestion, signal detection,
-            workflow orchestration, and multi-tenant platforms.
+            A portfolio centered on layered platform design: core truth, governed intelligence, operator visibility, and scalable application delivery.
           </p>
         </div>
       </div>
