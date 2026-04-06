@@ -197,7 +197,7 @@ export default function AilSystemPage() {
           </ul>
         </section>
 
-        <section className="mt-20 border-t border-white/10 pb-8 pt-16">
+        <section className="mt-20 border-t border-white/10 pt-16">
           <h2 className="text-xl font-semibold text-white sm:text-2xl">
             Current build status
           </h2>
@@ -207,6 +207,41 @@ export default function AilSystemPage() {
             and observability over novelty. The focus is a layer you can run,
             reason about, and evolve under real operational constraints.
           </p>
+        </section>
+
+        <section className="mt-20 border-t border-white/10 pb-8 pt-16">
+          <h2 className="text-xl font-semibold text-white sm:text-2xl">
+            Connected Systems
+          </h2>
+          <div className="mt-6 space-y-5 text-sm leading-7 text-white/70">
+            <p>
+              <Link
+                href="/projects/signalforge"
+                className="text-white/85 underline decoration-white/25 underline-offset-4 transition hover:decoration-white/50"
+              >
+                SignalForge
+              </Link>
+              — detection and evaluation.
+            </p>
+            <p>
+              <Link
+                href="/projects/chronoflow"
+                className="text-white/85 underline decoration-white/25 underline-offset-4 transition hover:decoration-white/50"
+              >
+                ChronoFlow
+              </Link>
+              — workflow orchestration.
+            </p>
+            <p>
+              <Link
+                href="/systems/controlplane"
+                className="text-white/85 underline decoration-white/25 underline-offset-4 transition hover:decoration-white/50"
+              >
+                ControlPlane
+              </Link>
+              — operator visibility.
+            </p>
+          </div>
         </section>
       </article>
 
