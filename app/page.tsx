@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import ArchitectureHierarchy from "@/components/ArchitectureHierarchy";
 import SystemsSection from "../components/SystemsSection";
 import ProjectsSection from "../components/ProjectsSection";
-import PrinciplesSection from "../components/PrinciplesSection";
 import StackSection from "../components/StackSection";
 import AboutPreview from "../components/AboutPreview";
 import ContactSection from "../components/ContactSection";
@@ -19,7 +18,6 @@ export default function Home() {
     <SystemsSection />
     <ProjectsSection />
     <SystemDesignPrinciples />
-    <PrinciplesSection />
     <StackSection />
     <AboutPreview />
     <ContactSection />

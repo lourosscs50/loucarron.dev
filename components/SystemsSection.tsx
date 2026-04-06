@@ -62,7 +62,7 @@ export default function SystemsSection() {
     <section id="systems" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
       <div className="mb-12 max-w-3xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8ea8ff]">
-          Systems I Build
+          Platform Systems
         </p>
         <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
           An ecosystem of layered software systems.
@@ -71,6 +71,10 @@ export default function SystemsSection() {
           These projects are not random apps. They represent different responsibilities
           across event infrastructure, detection, orchestration, intelligence, and
           application platforms.
+        </p>
+        <p className="mt-4 text-white/65">
+          Each system represents a distinct responsibility within a layered architecture
+          — from data ingestion to intelligence to operator visibility.
         </p>
       </div>
 
